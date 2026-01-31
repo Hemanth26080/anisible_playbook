@@ -1,15 +1,15 @@
 - name: install nginx and start service
   hosts: frontend
-  become: yes
+  become: yes # this is to run the task as root
 
   tasks: 
     - name: install nginx
-      ansible.builtin.package:
+      ansible.builtin.package: # this is to install the package
         name: nginx
-        state: installed
+        state: installed 
 
     - name: start nginx
-      ansible.builtin.service:
+      ansible.builtin.service: # this is to start the service
         name: nginx
         state: started
         enabled: yes  
