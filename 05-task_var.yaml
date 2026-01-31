@@ -2,7 +2,7 @@
   hosts: frontend
   vars:
     First_name: Hemanth
-    age: 26
+    age: 25
 
   tasks:
     - name: print the Variables
