@@ -1,0 +1,7 @@
+- name: read the var from inventory and print it using local host
+  hosts: local
+  connection: local
+  tasks:
+    - name: print the var
+      ansible.builtin.debug:
+        msg: "Hiii, {{First_name}} you are {{age}} years old and you know {{Lang}}"   
