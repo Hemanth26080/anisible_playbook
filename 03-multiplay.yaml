@@ -11,7 +11,7 @@
         msg: "Hello from play-01 task-02"
 
 - name: Play-02
-  hosts: backend
+  hosts: frontend
   become: yes
   tasks:
     - name: Play-02 task-01
