@@ -1,14 +1,17 @@
 - name: Basic Variables
   hosts: frontend
+  vars:
+    First_name: Hemanth
+    age: 26
 
   tasks:
     - name: print the Variables
       vars: 
-        First_name: Hemanth
+        last_name: Hemanth
         age: 26
         Lang: 
           - English
           - Tamil
           - Telugu
       ansible.builtin.debug:
-        msg: "Hiii, {{First_name}} you are {{age}} years old and you know {{Lang}}"
+        msg: "Hiii, {{First_name}} you are {{age}} years old and you know {{Lang}}" 
