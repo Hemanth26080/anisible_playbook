@@ -1,0 +1,8 @@
+- name: Extract data from var file
+  hosts: ansible  
+  vars_files:
+    - varibale_file.yaml
+  tasks:
+    - name: print the Variables
+      ansible.builtin.debug:
+        msg: "Hiii, {{First_name}} you are {{age}} years old and you know {{Lang}}" 
