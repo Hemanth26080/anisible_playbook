@@ -8,13 +8,13 @@
       - Tamil
       - Telugu
   tasks:
-    - var: 
-      First_name: Ponugothi
-      age: 26
-      Lang: 
-        - English
-        - Tamil
-        - Telugu
     - name: print the Variables
+      var:  
+        First_name: Ponugothi
+        age: 26
+        Lang: 
+          - English
+          - Tamil
+          - Telugu
       ansible.builtin.debug:
         msg: "Hiii, {{First_name}} you are {{age}} years old and you know {{Lang}}"
