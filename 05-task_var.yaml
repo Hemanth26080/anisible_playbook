@@ -1,16 +1,10 @@
 - name: Basic Variables
   hosts: frontend
-  vars: 
-    First_name: Hemanth
-    age: 26
-    Lang: 
-      - English
-      - Tamil
-      - Telugu
+
   tasks:
     - name: print the Variables
-      var:  
-        First_name: Ponugothi
+      vars: 
+        First_name: Hemanth
         age: 26
         Lang: 
           - English
