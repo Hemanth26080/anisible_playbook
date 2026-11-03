@@ -2,6 +2,12 @@
 
 This repository contains a comprehensive collection of Ansible playbooks designed to demonstrate core automation concepts, from basic service management to advanced variable precedence and error handling.
 
+## 🏛 Architecture Framework
+
+![Ansible Automation & Playbook Architecture](docs/architecture-diagram.png)
+
+---
+
 ## 🚀 Getting Started
 
 ### Inventory Management
